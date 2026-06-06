@@ -1,0 +1,281 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: #36454F; */
+    background-color: #2D2E31;
+    color: beige;
+}
+
+.navgiation-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 2px solid red; */
+    /* background-color: black; */
+    background-color: #2D2E31;
+    text-transform: capitalize;
+    height: 80px;
+}
+
+
+.brand{
+    /* border: 2px solid black; */
+}
+
+.brand-image{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.navigation{
+    /* border: 2px solid green; */
+    height: inherit;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.navigation-options{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    font-size: 2em;
+}
+
+.navigation-links{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.profile-image{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+
+}
+
+/* ---------------------------- HERO SECTION --------------------------- */
+
+.hero-container{
+    /* border: 2px solid red; */
+    height: 70vh;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.hero-image{
+    height: 80%;
+}
+
+.hero-content{
+    /* border: 2px solid blue; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* padding: 100px; */
+}
+
+.hero-heading{
+ text-transform: capitalize;   
+ font-size: 100px;
+ padding: 10px;
+ }
+
+.hero-subheading{
+    font-size: 40px;
+    padding: 10px;
+}
+
+.hero-subheading span{
+    color: green;
+}
+
+.hero-paragraph{
+
+    font-size: larger;
+    padding: 10px;
+    width: 50%;
+    /* border: 2px solid rebeccapurple; */
+}
+
+.hero-buttons{
+    /* padding: 20px; */
+    margin-top: 50px;
+    /* border: 2px solid yellow; */
+
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+.hero-button{
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.hero-button-browse-courses{
+    background-color: black;
+
+}
+
+.hero-button-browse-courses a{
+    font-size: larger;
+    color: beige;
+    text-decoration: none;
+}
+
+.hero-button-watch-intro{
+    background-color: beige;
+    
+}
+
+.hero-button-watch-intro a{
+    font-size: larger;
+    color: black;
+    text-decoration: none;
+}
+
+/* ---------------------------- Course Achivement ------------ */
+
+.course-achivements{
+    /* border: 2px solid blue ; */
+    padding: 20px;
+
+    color: black;
+    background-color: beige;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.achivement-heading{
+    font-size: larger;
+}
+
+/* ------------------------ Feature Scroll --------------- */
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid blue;
+    padding: 15px;
+    color: gold;
+    background-color: black;
+}
+
+.track {
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+}
+
+.track span{
+    font-size: larger;
+    padding-right: 10px;
+}
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/*  ---------------- coureses ------------- */
+.courses-section{
+    /* border: 5px solid brown; */
+    background-color: beige;
+    color: black;
+    padding: 10px;
+}
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    color: white;
+    /* height: 100vh; */
+}
+
+.section-heading{
+    text-align: center;
+}
+
+.section-subheading{
+    text-align: center;
+}
+
+.course-item{
+    /* background-color: #4A3B31;
+     */
+    background-color: #272727;
+    border-radius: 20px;
+    border: 2px solid gold;
+    /* border: 2px solid red; */
+    padding: 10px;
+}
+
+.course-image{
+    /* border: 2px solid green ; */
+    height: 180px;
+    width: 100%;
+}
+
+.course-details{
+    /* border: 2px solid brown; */
+    padding: 20px;
+    margin: 20px;
+}
+
+.course-details-heading{
+    /* border: 2px solid black; */
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+.course-details-footer{
+    /* border: 2px solid blue; */
+    text-align: center;
+}
+
+.course-details-footer p{
+    padding: 10px;
+}
+
+.course-details-footer button{
+    background: none;
+    color: gold;
+    font-size: large;
+    padding: 10px;
+    border: none;
+}
