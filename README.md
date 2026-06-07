@@ -40,12 +40,15 @@ Screenshots
 
 Homepage
 
-![Homepage Screenshot](screenshot.png)
-
+<p align="center">
+  <img src="screenshot.png" alt="Homepage Screenshot" width="900">
+</p>
 
 Mobile View
 
-![Mobile Screenshot](mobile-screenshot.png)
+<p align="center">
+  <img src="mobile-screenshot.png" alt="Mobile Screenshot" width="250">
+</p>
 
 
 Project Structure
