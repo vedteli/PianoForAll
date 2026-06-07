@@ -179,7 +179,7 @@ body{
 .marquee {
     width: 100%;
     overflow: hidden;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding: 15px;
     color: gold;
     background-color: black;
@@ -220,23 +220,29 @@ body{
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     color: white;
+    background-color: black;
     /* height: 100vh; */
 }
 
-.section-heading{
+.section-start{
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    /* background-color: black; */
+    /* color: white; */
     text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
 }
 
-.section-subheading{
-    text-align: center;
-}
+
 
 .course-item{
     /* background-color: #4A3B31;
      */
     background-color: #272727;
     border-radius: 20px;
-    border: 2px solid gold;
+    border: 2px solid black;
     /* border: 2px solid red; */
     padding: 10px;
 }
@@ -249,13 +255,14 @@ body{
 
 .course-details{
     /* border: 2px solid brown; */
-    padding: 20px;
-    margin: 20px;
+    padding: 20px 0px 20px 0px;
+    /* margin: 20px; */
 }
 
 .course-details-heading{
-    /* border: 2px solid black; */
-    width: auto;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;  
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0px 10px 0px 10px;
@@ -264,18 +271,145 @@ body{
 }
 
 .course-details-footer{
-    /* border: 2px solid blue; */
+    /* border: 2px solid grey; */
+    padding: 20px;
     text-align: center;
+    border-radius: 20px;
 }
 
 .course-details-footer p{
     padding: 10px;
+    padding-bottom:30px;
 }
 
 .course-details-footer button{
     background: none;
+    background-color: blue;
+    border-radius: 20px;
     color: gold;
     font-size: large;
-    padding: 10px;
+
+    padding: 15px;
     border: none;
+}
+
+
+/* ------------------ Contact US ------------ */
+
+#contact-us{
+    height: 350px;
+}
+
+.contact-us{
+    position: relative;
+    overflow: hidden;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: white;
+}
+
+/* Background layer */
+.contact-us::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("static/contact-us-bg-img.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    opacity: 0.4;
+    filter: blur(5px);
+
+    z-index: -2;
+}
+
+/* Dark overlay */
+.contact-us::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: -1;
+}
+
+.contact-us-heading{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 1;
+}
+
+.contact-us-heading p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-us-heading h1{
+    font-size: 50px;
+    line-height: 1.1;
+}
+
+.contact-us-heading h1 span{
+    color: gold;
+}
+
+.contact-us-heading sub{
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.contact-us-footer{
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+}
+
+.contact-us-email input{
+    padding: 15px;
+    width: 300px;
+
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contact-us-button button{
+    padding: 15px 25px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: gold;
+    color: black;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-us-button button:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
