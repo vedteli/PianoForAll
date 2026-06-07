@@ -3,8 +3,9 @@
 A modern and responsive piano learning website built using HTML and CSS.
 
 Live Demo:
+```
 https://pianoforall3.netlify.app/
-
+```
 
 About The Project
 
@@ -53,6 +54,7 @@ Mobile View
 
 Project Structure
 
+```
 PianoForAll/
 │
 ├── index.html
@@ -70,11 +72,14 @@ PianoForAll/
 │   └── course6.jpg
 │
 └── README.md
+```
 
 Getting Started
 
 Clone the repository:-
+```
 git clone https://github.com/yourusername/PianoForAll.git
+```
 
 Open the project
 Simply open `index.html` in your browser.
