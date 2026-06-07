@@ -38,17 +38,14 @@ Technologies Used
 
 Screenshots
 
-### Homepage
+Homepage
 
-![Homepage Screenshot](images/homepage.png)
+![Homepage Screenshot](screenshot.png)
 
-### Courses Section
 
-![Courses Screenshot](images/courses.png)
+Mobile View
 
-### Mobile View
-
-![Mobile Screenshot](images/mobile-view.png)
+![Mobile Screenshot](mobile-screenshot.png)
 
 
 Project Structure
