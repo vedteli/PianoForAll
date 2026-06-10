@@ -3,94 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PianoForAll</title>
-    <link rel="stylesheet" href="style.css">
+    <title>PianoForAll - Learn Piano Online</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/achievements.css">
+    <link rel="stylesheet" href="css/marquee.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     
     <nav>
         <div class="navgiation-container">
             <div class="brand"> 
-                <img class="brand-image" src="static/piano-logo.webp" alt="" srcset="">
+                <img class="brand-image" src="static/piano-logo.webp" alt="PianoForAll Logo">
             </div>
 
-            <div class="navigation">
+            <button class="menu-toggle" aria-label="Toggle menu" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="navigation" id="nav-menu">
                 <ul class="navigation-options">
                     <li>
-                        <a class="navigation-links" href="#" target="_blank">Home</a>
+                        <a class="navigation-links" href="#home">Home</a>
                     </li>
                     <li>
                         <a class="navigation-links" href="#courses">Courses</a>
                     </li>
                     <li>
-                        <a class="navigation-links" href="#" target="_blank">About Us </a>
+                        <a class="navigation-links" href="#about">About Us</a>
                     </li>
                     <li>
-                        <a class="navigation-links" href="#" target="_blank">Contact Us</a>
+                        <a class="navigation-links" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
 
             <div class="profile">
-                <img class="profile-image" src="static/avatar.svg" alt="User Profile Image" srcset="">            
+                <img class="profile-image" src="static/avatar.svg" alt="User Profile">            
             </div>
         </div>
     </nav>
 
     <main>
-        <div class="hero-container">
-            <img class="hero-image" src="static/piano-hero-background3.jpg" alt="" srcset="">
+        <div id="home">
+            <div class="hero-container">
+                <img class="hero-image" src="static/piano-hero-background3.jpg" alt="Piano learning hero image">
 
-            <div class="hero-content">
-                <h1 class="hero-heading">Piano For All</h1>
-                <h3 class="hero-subheading">The most <span>beautiful</span> way to learn piano</h3>
-                <p class="hero-paragraph">
-                    Learn piano the smart way with expert-led lessons and a clear learning path. Practice effectively, track your progress, and become the pianist you've always wanted to be.
-                </p>
+                <div class="hero-content">
+                    <h1 class="hero-heading">Piano For All</h1>
+                    <h2 class="hero-subheading">The most <span>beautiful</span> way to learn piano</h2>
+                    <p class="hero-paragraph">
+                        Learn piano the smart way with expert-led lessons and a clear learning path. Practice effectively, track your progress, and become the pianist you've always wanted to be.
+                    </p>
 
-                <div class="hero-buttons">
-                    <button class="hero-button-browse-courses hero-button">
-                        <a href="" target="_blank">Browse Courses</a>
-                    </button>
-                    <button class="hero-button-watch-intro hero-button">
-                        <a href="" target="_blank">Watch Intro</a>
-                    </button>
+                    <div class="hero-buttons">
+                        <button class="hero-button hero-button-browse-courses">
+                            <a href="#courses">Browse Courses</a>
+                        </button>
+                        <button class="hero-button hero-button-watch-intro">
+                            <a href="#watch-intro">Watch Intro</a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="course-achivements">
-            <div class="achivement">
-                <div class="achivement-heading">
-                    <h1>200+</h1>
+        <section class="course-achivements">
+            <div class="course-achivements-content">
+                <div class="achivement">
+                    <div class="achivement-heading">
+                        <h3>200+</h3>
+                    </div>
+                    <div class="achivement-detail">
+                       <p>Video lectures</p>
+                    </div>
                 </div>
-                <div class="achivement-detail">
-                   <p>Video lectures</p>
+
+                <div class="achivement">
+                    <div class="achivement-heading">
+                        <h3>50K+</h3>
+                    </div>
+                    <div class="achivement-detail">
+                        <p>Active students</p>
+                    </div>
+                </div>
+
+                <div class="achivement">
+                    <div class="achivement-heading">
+                        <h3>4.9★</h3>
+                    </div>
+                    <div class="achivement-detail">
+                        <p>Avg. rating</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="achivement">
-                <div class="achivement-heading">
-                    <h1>50K+</h1>
-                </div>
-                <div class="achivement-detail">
-                    <p>Active students</p>
-                </div>
-            </div>
-
-            <div class="achivement">
-                <div class="achivement-heading">
-                    <h1>4.9★</h1>
-                </div>
-                <div class="achivement-detail">
-                    <p>Avg. rating</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- <marquee>Learn Piano from Industry Experts 🎹</marquee> -->
-
-        <div class="marquee">
+        <section class="marquee">
             <div class="track">
                 <span>Scales</span>◆
                 <span>Harmony</span>◆
@@ -99,10 +113,10 @@
                 <span>Ear Training</span>◆
                 <span>Beethoven</span>◆
                 <span>Sheet Music</span>◆
-                <span>Jazz theory</span>◆
-                <span>improvisation</span>◆
+                <span>Jazz Theory</span>◆
+                <span>Improvisation</span>◆
 
-                <!-- Duplicate -->
+                <!-- Duplicate for seamless loop -->
                 <span>Scales</span>◆
                 <span>Harmony</span>◆
                 <span>Piano Basics</span>◆
@@ -110,151 +124,101 @@
                 <span>Ear Training</span>◆
                 <span>Beethoven</span>◆
                 <span>Sheet Music</span>◆
-                <span>Jazz theory</span>◆
-                <span>improvisation</span>
+                <span>Jazz Theory</span>◆
+                <span>Improvisation</span>
             </div>
-        </div>
+        </section>
 
-        <div class="courses-section" id="courses"> 
-            <div class="section-start">
-                <div>
-                    ★
+        <section class="courses-section" id="courses">
+            <div class="courses-section-content">
+                <div class="section-start">
+                    <div class="section-star">★</div>
+                    <h2 class="section-heading">Curriculum</h2>
+                    <p class="section-subheading">Our courses</p>
                 </div>
-                <h1 class="section-heading">Curriculum</h1>
-                <p class="section-subheading">our courses</p>
-            
+
+                <div class="courses">
+                    
+                     <div class="course-item">
+                        <div class="course-image">
+                            <img src="static/course1.jpg" alt="Piano Basics course">
+                        </div>
+                        
+                        <div class="course-details">
+                            <div class="course-details-heading">
+                                <div class="course-title">Piano Basics</div>
+                                <div class="course-duration">4 weeks</div>
+                            </div>
+                            <div class="course-details-footer">
+                                <p>Posture, hand position, and your first melodies — everything from scratch.</p>
+                                <button>Buy Course</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-image">
+                            <img src="static/course2.jpg" alt="Reading Sheet Music course">
+                        </div>
+                        
+                        <div class="course-details">
+                            <div class="course-details-heading">
+                                <div class="course-title">Reading Sheet Music</div>
+                                <div class="course-duration">3 weeks</div>
+                            </div>
+                            <div class="course-details-footer">
+                                <p>Notes, clefs, time signatures, and rhythm fundamentals made simple.</p>
+                                <button>Buy Course</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-image">
+                            <img src="static/course3.jpg" alt="Classical Techniques course">
+                        </div>
+                        
+                        <div class="course-details">
+                            <div class="course-details-heading">
+                                <div class="course-title">Classical Techniques</div>
+                                <div class="course-duration">6 weeks</div>
+                            </div>
+                            <div class="course-details-footer">
+                                <p>Master legato, staccato, dynamics, and phrasing in classical repertoire.</p>
+                                <button>Buy Course</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+        </section>
 
-            <div class="courses">
-                
-                 <div class="course-item">
-                    <div class="course-image">
-                        <img class="course-image" src="static/course1.jpg" alt="" srcset="">
-                    </div>
-                    
-                    <div class="course-details">
-                        <div class="course-details-heading">
-                            <div class="course-title">Piano Basics</div>
-                            <div class="course-duration">4 week</div>
-                        </div>
-                        <div class="course-details-footer">
-                            <p>Posture, hand position, and your first melodies — everything from scratch.</p>
-                            <button>Buy Course</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="course-item">
-                    <div class="course-image">
-                        <img class="course-image" src="static/course2.jpg" alt="" srcset="">
-                    </div>
-                    
-                    <div class="course-details">
-                        <div class="course-details-heading">
-                            <div class="course-title">Reading Sheet Music</div>
-                            <div class="course-duration">3 week</div>
-                        </div>
-                        <div class="course-details-footer">
-                            <p>Notes, clefs, time signatures, and rhythm fundamentals made simple.</p>
-                            <button>Buy Course</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="course-item">
-                    <div class="course-image">
-                        <img class="course-image" src="static/course3.jpg" alt="" srcset="">
-                    </div>
-                    
-                    <div class="course-details">
-                        <div class="course-details-heading">
-                            <div class="course-title">Classical Techniques</div>
-                            <div class="course-duration">6 week</div>
-                        </div>
-                        <div class="course-details-footer">
-                            <p>Master legato, staccato, dynamics, and phrasing in classical repertoire.</p>
-                            <button>Buy Course</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="course-item">
-                    <div class="course-image">
-                        <img class="course-image" src="static/course4.jpg" alt="" srcset="">
-                    </div>
-                    
-                    <div class="course-details">
-                        <div class="course-details-heading">
-                            <div class="course-title">Jazz & Chords</div>
-                            <div class="course-duration">5 week</div>
-                        </div>
-                        <div class="course-details-footer">
-                            <p>7th chords, voice leading, and the foundations of jazz improvisation.</p>
-                            <button>Buy Course</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="course-item">
-                    <div class="course-image">
-                        <img class="course-image" src="static/course5.jpg" alt="" srcset="">
-                    </div>
-                    
-                    <div class="course-details">
-                        <div class="course-details-heading">
-                            <div class="course-title">Advanced Repertoire</div>
-                            <div class="course-duration">8 week</div>
-                        </div>
-                        <div class="course-details-footer">
-                            <p>Chopin, Beethoven, and Liszt — tackled with refined technique.</p>
-                            <button>Buy Course</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="course-item">
-                    <div class="course-image">
-                        <img class="course-image" src="static/course6.jpg" alt="" srcset="">
-                    </div>
-                    
-                    <div class="course-details">
-                        <div class="course-details-heading">
-                            <div class="course-title">Contemporary Styles</div>
-                            <div class="course-duration">6 week</div>
-                        </div>
-                        <div class="course-details-footer">
-                            <p>Modern pop, film scoring, and neo-soul approaches to the piano.</p>
-                            <button>Buy Course</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="contact-us">
+        <section id="contact">
             <div class="contact-us">
-
-                <div class="contact-us-heading">
-                <p>GET STARTED TODAY</p>
-                <h1>First 14 days</h1>
-                <h1><span>On Us</span></h1>
-                <sub>No credit card. No pressure. Cancel any time. Just start playing. </sub>
-            </div>
-            <div class="contact-us-footer">
-                <div class="contact-us-email">
-                    <input type="email" placeholder="Enter your email">
+                <div class="contact-us-content">
+                    <div class="contact-us-heading">
+                        <p>GET STARTED TODAY</p>
+                        <h2>First 14 days</h2>
+                        <h2><span>On Us</span></h2>
+                        <sub>No credit card. No pressure. Cancel any time. Just start playing.</sub>
+                    </div>
+                    <div class="contact-us-footer">
+                        <div class="contact-us-email">
+                            <input type="email" placeholder="Enter your email" aria-label="Email address">
+                        </div>
+                        <div class="contact-us-button">
+                            <button type="submit">Start Free</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-us-button">
-                    <button> Start Free</button>
-                </div>
             </div>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer>
-
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

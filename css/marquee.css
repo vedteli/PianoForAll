@@ -1,0 +1,65 @@
+/* ====================================
+   MARQUEE / TICKER SECTION
+   ==================================== */
+
+.marquee {
+    width: 100%;
+    background-color: var(--bg-secondary);
+    padding: 1.5rem var(--container-padding);
+    overflow: hidden;
+}
+
+.track {
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    animation: marquee-scroll 30s linear infinite;
+}
+
+.track span {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-weight: 600;
+    color: var(--accent-primary);
+    white-space: nowrap;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .marquee {
+        padding: 1.25rem var(--container-padding);
+    }
+
+    .track {
+        gap: 2rem;
+        animation: marquee-scroll 24s linear infinite;
+    }
+
+    .track span {
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .marquee {
+        padding: 1rem 1rem;
+    }
+
+    .track {
+        gap: 1.5rem;
+        animation: marquee-scroll 20s linear infinite;
+    }
+
+    .track span {
+        font-size: clamp(0.85rem, 2.5vw, 1rem);
+    }
+}

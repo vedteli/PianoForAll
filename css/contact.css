@@ -1,0 +1,237 @@
+/* ====================================
+   CONTACT / CTA SECTION
+   ==================================== */
+
+#contact-us {
+    width: 100%;
+}
+
+.contact-us {
+    position: relative;
+    width: 100%;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem var(--container-padding);
+    gap: 2rem;
+    overflow: hidden;
+}
+
+/* Background Image */
+.contact-us::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('static/contact-us-bg-img.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.35;
+    filter: blur(3px);
+    z-index: 0;
+}
+
+/* Dark Overlay */
+.contact-us::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.58);
+    z-index: 1;
+}
+
+.contact-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    gap: 2rem;
+}
+
+.contact-us-heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-us-heading p {
+    font-size: 0.95rem;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+}
+
+.contact-us-heading h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.contact-us-heading h1 span {
+    color: var(--accent-primary);
+}
+
+.contact-us-heading sub {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.contact-us-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+    flex-wrap: wrap;
+}
+
+.contact-us-email {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-us-email input {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-size: 1rem;
+    transition: all var(--transition-base);
+}
+
+.contact-us-email input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-us-email input:focus {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: var(--accent-primary);
+}
+
+.contact-us-button {
+    flex-shrink: 0;
+    min-width: 200px;
+}
+
+.contact-us-button button {
+    width: 100%;
+    padding: 1rem 1.75rem;
+    border-radius: var(--radius-md);
+    background-color: var(--accent-primary);
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-us-button button:hover {
+    background-color: var(--accent-secondary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .contact-us {
+        padding: 3rem var(--container-padding);
+        min-height: 360px;
+    }
+
+    .contact-us-heading h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+
+    .contact-us-heading sub {
+        font-size: 1rem;
+    }
+
+    .contact-us-footer {
+        max-width: 100%;
+    }
+}
+
+/* Tablet Small */
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 2.5rem var(--container-padding);
+        min-height: 340px;
+        gap: 1.5rem;
+    }
+
+    .contact-us-heading h1 {
+        font-size: clamp(1.75rem, 6vw, 2.75rem);
+    }
+
+    .contact-us-heading sub {
+        font-size: 0.95rem;
+    }
+
+    .contact-us-footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact-us-email {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .contact-us-button {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .contact-us {
+        padding: 2rem 1rem;
+        min-height: 320px;
+        gap: 1.25rem;
+    }
+
+    .contact-us::before {
+        filter: blur(2px);
+    }
+
+    .contact-us-heading p {
+        font-size: 0.85rem;
+        letter-spacing: 0.12em;
+    }
+
+    .contact-us-heading h1 {
+        font-size: clamp(1.5rem, 7vw, 2.2rem);
+    }
+
+    .contact-us-heading sub {
+        font-size: 0.9rem;
+    }
+
+    .contact-us-footer {
+        gap: 0.75rem;
+    }
+
+    .contact-us-email input {
+        padding: 0.875rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .contact-us-button button {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}
