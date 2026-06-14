@@ -461,7 +461,6 @@ input:focus-visible,
 }
 
 /*  --------------- RESPONSIVENESS ---------- */
-/* ================= TABLETS ================= */
 
 @media (max-width: 1024px) {
 
@@ -501,8 +500,6 @@ input:focus-visible,
 
 @media (max-width: 768px) {
 
-    /* NAVIGATION */
-
     .navgiation-container {
         flex-direction: column;
         height: auto;
@@ -520,7 +517,6 @@ input:focus-visible,
         font-size: 0.95rem;
     }
 
-    /* HERO */
 
     .hero-container {
         flex-direction: column;
@@ -552,14 +548,12 @@ input:focus-visible,
         width: 100%;
     }
 
-    /* ACHIEVEMENTS */
 
     .course-achivements {
         flex-direction: column;
         gap: 20px;
     }
 
-    /* COURSES */
 
     .courses {
         grid-template-columns: 1fr;
@@ -575,7 +569,6 @@ input:focus-visible,
         gap: 10px;
     }
 
-    /* CONTACT */
 
     .contact-us-heading {
         width: 90%;
